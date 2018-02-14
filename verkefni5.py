@@ -16,4 +16,4 @@ def index5():
 def static_server(filename):
     return static_file(filename, root=('./static_files'))
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT")))
